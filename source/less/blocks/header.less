@@ -1,0 +1,119 @@
+.header {
+  font: 400 14px "Montserat", "Arial", sans-serif;
+  line-height: 18px;
+  color: #444444;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.header__logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  height: 46px;
+  border: 6px solid #170f1c;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  .header__logo-text {
+    width: 85px;
+    text-shadow: 0 0 2px rgba(21, 21, 22, 0.75);
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.02px;
+  }
+
+  .header__logo-text--color {
+    color: #77efe5;
+  }
+}
+
+//планшетная версия
+@media (min-width: 768px) {
+  .header {
+    margin-top: 24px;
+    width: 100%;
+    border: none;
+  }
+
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .header__logo-image {
+    flex-grow: 1;
+    width: 175px;
+    height: 65px;
+  }
+}
+
+//десктопная версия
+@media (min-width: 1300px) {
+  .header {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  //ширина для десктопа
+  .header__container {
+    width: 1220px;
+    /*ширина контента для десктопа*/
+    padding: 0 40px;
+    /*внутрение отступы*/
+    margin: 0 auto;
+    border: none;
+  }
+
+  .header__logo {
+    margin-top: 32px;
+  }
+
+  .header__logo-image {
+    width: 199px;
+    height: 60px;
+  }
+
+  .header__container--image {
+    position: relative;
+  }
+
+  .header__container--image::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 675px;
+    background-color: #68b738;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: cover;
+    z-index: -1;
+  }
+}

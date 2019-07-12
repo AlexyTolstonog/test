@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script>
+    document.createElement("picture");
+
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="header header__container--image">
+    <div class="header__container">
+      <a class="header__logo">
+        <span class="header__logo-text">SH<span class="header__logo-text--color">O</span>PNO</span>
+      </a>
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a class="navigation__item-link">Главная</a></li>
+            <li class="navigation__item"><a class="navigation__item-link" href="catalog.html">Каталог продукции</a></li>
+            <li class="navigation__item"><a class="navigation__item-link" href="form.html">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="description">
+      <span class="description__text">Say Hello to SHOPNO! Agency CORPORATE SHOPNO Theme</span>
+      <a href="#contacts" class="button contact__button">CONTACT US</a>
+    </section>
+
+    <section class="info">
+      <h2 class="info__headline">ABOUT US</h2>
+      <p class="info__text">Lorem ipsum dolor sit amet event landing template</p>
+      <div class="info__content">
+        <div class="info__content-slider">
+          <div class="info__content-slider-item">
+            <img class="info__content-slider-item-image" src="img/computer.png" alt="компьютер">
+          </div>
+          <div class="info__content-slider-item-button">
+            <input type="radio" name="slider" id="first-slide" class="slider__button" checked=""><label
+              for="first-slide" class="slider__button-description"></label>
+            <input type="radio" name="slider" id="second-slide" class="slider__button"><label for="second-slide"
+              class="slider__button-description"></label>
+            <input type="radio" name="slider" id="third-slide" class="slider__button"><label for="third-slide"
+              class="slider__button-description"></label>
+            <input type="radio" name="slider" id="four-slide" class="slider__button"><label for="four-slide"
+              class="slider__button-description"></label>
+          </div>
+        </div>
+
+        <div class="info__content-description">
+          <h3 class="info__content-description-headline">We Actually Do amazing works</h3>
+          <p class="info__content-description-text">A visual approach is an approach to a runway at an airport
+            conducted under instrument flight rules. The pilot must at all times have either the airport or the
+            preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at
+            all
+            times.
+            Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+          </p>
+
+          <h3 class="info__content-description-headline">why we are the great?</h3>
+          <p class="info__content-description-text">A visual approach is an approach to a runway at an airport
+            conducted under instrument flight rules.
+            The preceding aircraft in approach correct sight.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="example">
+
+      <h2 class="example__headline">featured works</h2>
+      <p class="example__text">Lorem ipsum dolor sit amet event landing template </p>
+      <div class="example__catalog">
+        <img class="example__catalog-items" src="img/banner-icekream.png" alt="icekream" width="370" height="359">
+        <img class="example__catalog-items" src="img/box.png" alt="box" width="370" height="359">
+        <img class="example__catalog-items" src="img/boutlle.png" alt="boutlle" width="370" height="359">
+        <img class="example__catalog-items" src="img/boock.png" alt="boock" width="370" height="359">
+        <img class="example__catalog-items" src="img/number.png" alt="number" width="370" height="359">
+        <img class="example__catalog-items" src="img/home_pakage.png" alt="home_pakage" width="370" height="359">
+      </div>
+    </section>
+
+    <section cslass="presentations">
+      <h3 class="presentations__headline">our services</h3>
+      <p class="presentations__text">Lorem ipsum dolor sit amet event landing template</p>
+      <div class="presentations__catalog">
+
+        <div class="presentations__catalog-item presentations__catalog-item--diet ">
+          <h4 class="presentations__catalog-item-title">Designing is The CooL LOVE FOR.</h4>
+          <h4 class="presentations__catalog-item-title--active">Designing is The CooL LOVE FOR.</h4>
+          <p class="presentations__catalog-title-description--active">Our most popular service is our Virtual
+            Receptionist.
+            We know that sometimes it’s something and you middle most
+            this job was posted less than five minutes ago, and
+            we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates.
+            You may even catch the client while they’re still online.</p>
+          <p class="presentations__catalog-title-description">Our most popular service is our we know that sometimes
+            it’s something and you middle most..</p>
+          <a class="presentations__catalog-item-link" href="#"><span>Know More</span>
+            <svg class="presentations__catalog-item-link-icon" width="22" height="15">
+              <use xlink:href="#icon-right-arrow-long"></use>
+            </svg>
+          </a>
+          <a class="presentations__catalog-item-link--active" href="#">
+            <svg class="presentations__catalog-item-link-icon" width="22" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="presentations__catalog-item presentations__catalog-item--calc">
+          <h4 class="presentations__catalog-item-title">cool psd Design</h4>
+          <p class="presentations__catalog-title-description">Our most popular service is our we know that sometimes
+            it’s something and you middle most..</p>
+          <a class="presentations__catalog-item-link" href="#"><span>Know More</span>
+            <svg class="presentations__catalog-item-link-icon" width="22" height="15">
+              <use xlink:href="#icon-right-arrow-long"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="presentations__catalog-item presentations__catalog-item--desctop">
+          <h4 class="presentations__catalog-item-title">Designing is The Cool</h4>
+          <p class="presentations__catalog-title-description">Our most popular service is our Virtual Receptionist.
+            We
+            know that ...</p>
+          <a class="presentations__catalog-item-link" href="#"><span>Know More</span>
+            <svg class="presentations__catalog-item-link-icon" width="22" height="15">
+              <use xlink:href="#icon-right-arrow-long"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="presentations__catalog-item presentations__catalog-item--mono">
+          <h4 class="presentations__catalog-item-title">PSD TO HTML KORI</h4>
+          <p class="presentations__catalog-title-description">We know that sometimes it’s something and you middle
+            most..</p>
+          <a class="presentations__catalog-item-link" href="#"><span>Know More</span>
+            <svg class="presentations__catalog-item-link-icon" width="22" height="15">
+              <use xlink:href="#icon-right-arrow-long"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="presentations__catalog-item presentations__catalog-item--boutle">
+          <h4 class="presentations__catalog-item-title">cool psd Design</h4>
+          <p class="presentations__catalog-title-description">Our most popular service is our new virtual
+            Receptionist
+            you middle most..</p>
+          <a class="presentations__catalog-item-link" href="#"><span>Know More</span>
+            <svg class="presentations__catalog-item-link-icon" width="22" height="15">
+              <use xlink:href="#icon-right-arrow-long"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="presentations__catalog-item presentations__catalog-item--dishes">
+          <h4 class="presentations__catalog-item-title">Designing is The Cool FOR</h4>
+          <p class="presentations__catalog-title-description">Our most popular service is our Virtual Receptionist.
+            We
+            know that sometimes it’s something and you middle most..</p>
+          <a class="presentations__catalog-item-link" href="#"><span>Know More</span>
+            <svg class="presentations__catalog-item-link-icon" width="22" height="15">
+              <use xlink:href="#icon-right-arrow-long"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="comand">
+      <h3 class="comand__headline">small team</h3>
+      <p class="comand__text">Lorem ipsum dolor sit amet event landing template</p>
+      <div class="comand__catalog">
+        <div class="comand__catalog-item comand__catalog-item--w">
+          <img src="img/team_w.png" alt="разработчик" class="comand__catalog-item-image">
+        </div>
+
+        <div class="comand__catalog-item comand__catalog-item--ne">
+          <img src="img/team_ne.png" alt="тестировщик" class="comand__catalog-item-image">
+          <div class="comand__catalog-item-content">
+            <h4 class="comand__catalog-item-content-headline">AL RAYHAN <span
+                class="comand__catalog-item-content-headline--profeccsion">/ UI Designer</span></h4>
+            <p class="comand__catalog-item-content-text">Lorem Ipsum is not simply is an action designer random text
+              It has roots in a piece. </p>
+            <ul class="comand__catalog-item-content-social-list">
+              <li><a href="#"><svg class="presentations__catalog-item-link-icon" width="22" height="15">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="presentations__catalog-item-link-icon" width="22" height="15">
+                    <use xlink:href="#icon-insta-mobile"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="presentations__catalog-item-link-icon" width="22" height="15">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="presentations__catalog-item-link-icon" width="22" height="15">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="comand__catalog-item comand__catalog-item--bo">
+          <img src="img/team_bo.png" alt="разработчик" class="comand__catalog-item-image">
+        </div>
+        <div class="comand__catalog-item comand__catalog-item--be">
+          <img src="img/team_be.png" alt="тестировщик" class="comand__catalog-item-image">
+        </div>
+        <div class="comand__catalog-item comand__catalog-item--ka">
+          <img src="img/team_ka.png" alt="разработчик" class="comand__catalog-item-image">
+        </div>
+        <div class="comand__catalog-item comand__catalog-item--w">
+          <img src="img/team_w.png" alt="разработчик" class="comand__catalog-item-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h3 class="comand__headline">what they says</h3>
+      <p class="comand__text">Lorem ipsum dolor sit amet event landing template</p>
+      <div class="review-wrapper">
+        <div class="review__photo-slider">
+
+          <div class="info__content-slider-item">
+            <img class="info__content-slider-item-image" src="img/team_bo.png" alt="компьютер">
+          </div>
+          <div class="info__content-slider-item-button">
+            <input type="radio" name="slider" id="first-slide" class="slider__button" checked=" "><label
+              for="first-slide" class="slider__button-description"></label>
+            <input type="radio" name="slider" id="second-slide" class="slider__button"><label for="second-slide"
+              class="slider__button-description"></label>
+            <input type="radio" name="slider" id="third-slide" class="slider__button"><label for="third-slide"
+              class="slider__button-description"></label>
+            <input type="radio" name="slider" id="four-slide" class="slider__button"><label for="four-slide"
+              class="slider__button-description"></label>
+          </div>
+        </div>
+          <div class="review__coments">
+
+          </div>
+
+
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="#"><img class="footer__logo-link-image" src="img/logo-footer.svg"
+            alt="Kat Energy"></a>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link social__link--vkontakte">
+              <svg class="link-icon" width="32" height="32">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+
+            </a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram">
+              <svg class="link-icon" width="32" height="32">
+                <use xlink:href="#icon-insta-mobile"></use>
+              </svg>
+            </a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook">
+              <svg focusable="false" class="link-icon" width="32" height="32">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__copyright-text">HTML Academy</span>
+          <svg class="footer__copyright-image" width="32" height="32">
+            <use xlink:href="#icon-academy"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script>
+    var navMain = document.querySelector('.navigation');
+    var navToggle = document.querySelector('.navigation__toggle');
+
+    navMain.classList.remove('navigation--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('navigation--closed')) {
+        navMain.classList.remove('navigation--closed');
+        navMain.classList.add('navigation--opened');
+      } else {
+        navMain.classList.add('navigation--closed');
+        navMain.classList.remove('navigation--opened');
+      }
+    });
+
+    var presentationsItem = document.querySelector('.presentations__catalog-item');
+    var presentationsActiveButton = document.querySelector('.presentations__catalog-item-link');
+    var presentationsRemoveActiveButton = document.querySelector('.presentations__catalog-item-link--active');
+    presentationsActiveButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      presentationsItem.classList.add('presentations__catalog-item--active');
+    });
+    presentationsRemoveActiveButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      presentationsItem.classList.remove('presentations__catalog-item--active')
+    });
+
+  </script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/svgforeverybody.min.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+.info {
+  width: 280px;
+  /*ширина для мобильного*/
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.info__headline {
+  margin: 0 auto;
+  width: 219px;
+  height: 28px;
+  opacity: 0.9;
+  color: #000000;
+  font-family: "Montserat", "Arial", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  /* Text style for "ABOUT US" */
+  letter-spacing: 2.28px;
+}
+
+.info__text {
+  margin: 0 auto;
+  opacity: 0.62;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Merriweather", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  /* Text style for "L, orem ip" */
+  letter-spacing: 1.08px;
+}
+
+.info__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__content-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.info__content-slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info__content-slider-item-image {
+  width: 80%;
+  box-shadow: -30px 0 0 -13px #eff0f2, 30px 0 0 -13px #eff0f2, 0 0 10px 5px #eff0f2;
+}
+
+.info__content-slider-item-button {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.slider__button {
+  display: none;
+}
+
+.slider__button-description {
+  margin-left: 15px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: #d0d0d0;
+  }
+}
+
+.slider__button:checked + .slider__button-description::before {
+  display: flex;
+  background-color: #71f6eb;
+}
+
+.info__content-description-headline {
+  opacity: 0.75;
+  color: #000000;
+  font-family: "Merriweather", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  /* Text style for "We Actuall" */
+  letter-spacing: 1.2px;
+}
+
+.info__content-description-text {
+  opacity: 0.74;
+  color: #000000;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* Text style for "A,  visual" */
+  letter-spacing: 0.8px;
+}

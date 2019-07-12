@@ -1,0 +1,143 @@
+.description {
+  width: 280px;
+  /*ширина для мобильного*/
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: #eff0f2;
+  opacity: 0.99;
+}
+
+.description__text {
+  text-align: center;
+  height: auto;
+  width: auto;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+  color: #505050;
+  font-family: "Montserat", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  /* Text style for "Say Hello" */
+  letter-spacing: 2.7px;
+}
+
+.contact__button {
+  width: 136px;
+  height: 13px;
+  opacity: 0.75;
+  color: #000000;
+  font-family: "Montserat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  /* Text style for "CONTACT US" */
+  letter-spacing: 2.16px;
+}
+
+//планшетная версия
+@media (min-width: 768px) {
+  .programm {
+    background-image: none;
+    color: black;
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    align-items: unset;
+  }
+
+  .programm__headline {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 53px 202px 0 90px;
+    min-height: 120px;
+    width: 420px;
+    font-weight: 400;
+    letter-spacing: -2px;
+  }
+
+  .programm__text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 41px auto 0 90px;
+    height: auto;
+    letter-spacing: -0.5px;
+  }
+
+  .programm__image {
+    width: 709px;
+    height: 609px;
+    margin: 17px auto 0 auto;
+  }
+
+  .programm__button {
+    width: 245px;
+    margin: 0;
+    bottom: 527px;
+    height: 54px;
+    left: 120px;
+    position: absolute;
+    background-color: #68b738;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+}
+
+//десктопная версия
+@media (min-width: 1300px) {
+  .programm {
+    width: 1220px;
+    /*desctop*/
+    padding: 0 40px;
+    /*внутрение отступы*/
+    margin: 0 auto;
+    position: relative;
+    min-height: 634px;
+  }
+
+  .programm__headline,
+  .programm__text,
+  .programm__button {
+    margin: 105px auto 0 78px;
+  }
+
+  .programm__headline {
+    height: auto;
+    max-width: 45%;
+  }
+
+  .programm__text {
+    max-width: 45%;
+    margin-top: 42px;
+    height: auto;
+  }
+
+  .programm__image {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    left: 488px;
+  }
+
+  .programm__button {
+    position: static;
+    width: 245px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 53px;
+  }
+}
