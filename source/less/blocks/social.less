@@ -16,28 +16,24 @@
 
 .social__item {
   list-style: none;
-  width: 22px;
-  height: 30px;
-  margin: 0 16px;
+  width: 10px;
+  height: 13px;
+  margin: 0 7px;
 }
 
 .social__link {
-  width: 22px;
-  height: 30px;
+  width: 10px;
+  height: 13px;
 }
 
 .link-icon {
-  width: 22px;
-  height: 19px;
+  width: 10px;
+  height: 13px;
+  fill: #cccccc;
 }
 
 .link-icon:hover {
-  fill: #68b738;
-}
-
-.link-icon:active {
-  fill: black;
-  opacity: 0.3;
+  fill: #48974c;
 }
 
 @media (min-width: 768px) {
@@ -55,8 +51,40 @@
     padding: 0;
   }
 
+  .social__item {
+    list-style: none;
+    width: 18px;
+    height: 13px;
+    margin: 0 7px;
+  }
+
+  .social__link {
+    width: 18px;
+    height: 13px;
+  }
+
   .link-icon {
-    width: 33px;
-    height: 26px;
+    width: 18px;
+    height: 13px;
+  }
+}
+
+//десктопная версия
+@media (min-width: 1300px) {
+  .social__item {
+    list-style: none;
+    width: 23px;
+    height: 19px;
+    margin: 0 7px;
+  }
+
+  .social__link {
+    width: 23px;
+    height: 19px;
+  }
+
+  .link-icon {
+    width: 23px;
+    height: 19px;
   }
 }

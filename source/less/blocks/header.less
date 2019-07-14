@@ -13,40 +13,32 @@
   padding: 0 20px;
   margin: 0 auto;
   border-bottom: 1px solid #d9d9d9;
+  background: white;
 }
 
-.header__logo {
-  flex-grow: 1;
-  display: flex;
+.header__container-linck {
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  width: 113px;
-  height: 46px;
-  border: 6px solid #170f1c;
+  margin: 0 auto;
+}
 
+.header__container-linck-header {
+  color: #262626;
+  font-family: "Cormorantinfant", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.18px;
+}
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  .header__logo-text {
-    width: 85px;
-    text-shadow: 0 0 2px rgba(21, 21, 22, 0.75);
-    color: #000000;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 28px;
-    text-transform: uppercase;
-    letter-spacing: 1.02px;
-  }
-
-  .header__logo-text--color {
-    color: #77efe5;
-  }
+.header__container-linck-text {
+  font-style: italic;
+  color: #595959;
+  font-family: "Cormorantinfant", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.08px;
 }
 
 //планшетная версия
@@ -61,16 +53,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 708px;
-    padding: 0 30px;
+    width: 100%;
+    padding: 0;
     margin: 0 auto;
     border: none;
-  }
-
-  .header__logo-image {
-    flex-grow: 1;
-    width: 175px;
-    height: 65px;
+    flex-wrap: wrap;
   }
 }
 
@@ -91,29 +78,16 @@
     border: none;
   }
 
-  .header__logo {
-    margin-top: 32px;
+  .header__container-linck-header {
+    margin-top: 48px;
+    margin-bottom: 9px;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 1.18px;
   }
 
-  .header__logo-image {
-    width: 199px;
-    height: 60px;
-  }
-
-  .header__container--image {
-    position: relative;
-  }
-
-  .header__container--image::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 675px;
-    background-color: #68b738;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: cover;
-    z-index: -1;
+  .header__container-linck-text {
+    margin-top: 10px;
+    letter-spacing: -0.5px;
   }
 }
